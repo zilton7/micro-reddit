@@ -9,7 +9,48 @@ We were asked to create Micro-Reddit project in order to learn about Active Reco
 - Active Record
 - Ruby
 
-- This will start the bot in your console. It will print 'Bot is running in the background...' to indicate that it is running.
+## Getting Started
+
+To get a local copy of the repository please run the following commands on your terminal: 
+
+``` 
+$ cd <folder> 
+```
+
+``` 
+$ git clone https://github.com/zilton7/micro-reddit.git 
+```
+``` 
+$ cd micro-reddit 
+```
+
+> Migrate the database
+``` 
+$ rails db:migrate 
+```
+
+``` 
+$ rails console 
+```
+
+> Create 2 users, one as Post author, other as Commenter
+``` 
+$ user_1 = User.create(name: 'johndoe', email: 'john@doe.com', password: '123456') 
+$ user_2 = User.create(name: 'johndoe2', email: 'john2@doe.com', password: '123456') 
+```
+
+> Create post
+```
+$ post = Post.create(title: 'Post Title', body: 'Whatever body here', user: user_1)
+```
+
+> Add comment to post
+```
+$ comment = Comment.create(body: 'Nice post', user: user_2, post: post)
+```
+
+
+
 
 ## AUTHOR
 
