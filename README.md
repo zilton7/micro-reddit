@@ -41,12 +41,12 @@ $ user_2 = User.create(name: 'johndoe2', email: 'john2@doe.com', password: '1234
 
 > Create post
 ```
-$ post = Post.create(title: 'Post Title', body: 'Whatever body here', user: user_1)
+$ Post.create(title: 'Post Title', body: 'Whatever body here', user: user_1)
 ```
 
 > Add comment to post
 ```
-$ comment = Comment.create(body: 'Nice post', user: user_2, post: post)
+$ Comment.create(body: 'Nice post', user: user_2, post: post)
 ```
 
 
@@ -70,7 +70,7 @@ $ comment = Comment.create(body: 'Nice post', user: user_2, post: post)
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/zilton7/telegram-bot/issues).
+Feel free to check the [issues page](https://github.com/zilton7/micro-reddit/issues).
 
 ## Show your support
 
